@@ -36,7 +36,7 @@ def new_search(request):
             post_image_id = post.find(class_='result-image').get('data-ids').split(',')[0].split(':')[1]
             post_image_url = BASE_IMAGE_URL.format(post_image_id)
         else:
-            post_image_url = 'https://craiglist.org/images/peace.jpg'
+            post_image_url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/600px-No_image_available.svg.png'
 
         final_postings.append((post_title, post_url, post_price, post_image_url))
 
